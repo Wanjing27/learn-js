@@ -2,6 +2,7 @@ function logCells() {
   // Get all td elements inside the table within the div with id "root"
   var tdElements = document.querySelectorAll('#root table tr td');
   // Log the td elements
+  //forEach- calling every array
   tdElements.forEach(function(td, index) {
     console.log(` ==== Index === ${index}`);
     console.log(`Node Type = ${td.childNodes[0].nodeType}`);
