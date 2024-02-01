@@ -10,10 +10,11 @@ const transactions = [
   let totalAmount = 0;
   
   // Using forEach to calculate the total amount spent and show the original array
+  //still works if originalArray is gone
   transactions.forEach((transaction, index, originalArray) => {
     totalAmount += transaction.amount;
-    console.log(`Transaction ${index + 1}: ${transaction.description} - $${transaction.amount}`);
-    console.log('Original Array:', originalArray);
+    //console.log(`Transaction ${index + 1}: ${transaction.description} - $${transaction.amount}`);
+    //console.log('Original Array:', originalArray);
   });
   
   // Displaying the total amount spent
