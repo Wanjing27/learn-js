@@ -1,4 +1,5 @@
 function setColor(set) {
+    //return function(){
         let changeColor = set;
         if(changeColor) {
             let userColor = document.getElementById('color').value;
@@ -9,5 +10,5 @@ function setColor(set) {
 
 window.onload = function() {
     let toggle = true;
-    document.getElementById('btn').onclick = setColor(toggle);
+    document.getElementById('btn').onclick = ()=> setColor(toggle);
 }

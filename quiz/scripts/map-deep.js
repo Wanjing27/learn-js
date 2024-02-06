@@ -6,6 +6,7 @@ const originalMatrix = [
   ];
   
   const newMatrix = originalMatrix.map((row) => {
+    //return [...row].sort();
     return row.sort();
   });
   
